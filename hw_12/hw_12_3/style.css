@@ -1,0 +1,172 @@
+
+
+:root {
+    --main-orange-color: #ff5945;
+}
+
+body {
+    background-color: #343434;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.app__container{
+
+    margin: 0 auto;
+    max-width: 540px;
+    background-color: white;
+    padding: 10px 20px;
+}
+.app__title{
+    margin-bottom: 16px;
+
+}
+
+.app__input__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 30px;
+    background-color: #edeef0;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+
+.app__create__input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.app__create__btn{
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background: var(--main-orange-color);
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+}
+
+.app__tasks{
+    padding: 0 16px;
+    list-style: none;
+}
+.app__task{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: #ffffff; /* Light background */
+    border-radius: 10px; /* Rounded corners */
+    padding: 10px; /* Add some padding */
+    margin: 5px 5px; /* Add margin for spacing */
+    box-shadow:
+            5px 5px 10px #babecc, /* Bottom-right shadow */
+            -5px -5px 10px #ffffff; /* Top-left shadow */
+    list-style: none; /* Remove default list style */
+}
+/*.app__task:hover{*/
+/*    box-shadow:*/
+/*            3px 3px 6px #babecc,*/
+/*            -3px -3px 6px #ffffff;*/
+/*}*/
+
+/*.app__task:active{*/
+/*    box-shadow:*/
+/*            inset 2px 2px 5px #babecc,*/
+/*            inset -2px -2px 5px #ffffff;*/
+/*}*/
+
+.app__task__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0px 1000px transparent inset;
+    transition: background-color 5000s ease-in-out 0s;
+}
+/* Сброс стандартного оформления чекбокса */
+.app__task__checkbox {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--main-orange-color);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+
+
+/* Стили для состояния "отмечено" */
+.app__task__checkbox:checked:before {
+    content: "";
+    position: absolute;
+    left: 11px;
+    top: 6px;
+    width: 6px;
+    height: 13px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    /* стили для выбранного состояния */
+}
+
+.app__task__checkbox:checked + .app__task__text {
+    text-decoration: line-through;
+}
+
+/* Стили для состояния "отключено" */
+.app__task__checkbox:disabled {
+    background-color: #343434;
+}
+
+.app__task__remove {
+    background-color: #ffffff; /* Light background for neumorphism */
+    border: none;
+    border-radius: 10px; /* Rounded corners */
+    padding: 10px;
+    box-shadow:
+            5px 5px 10px #babecc, /* Bottom-right shadow */
+            -5px -5px 10px #ffffff; /* Top-left shadow */
+    cursor: pointer;
+    transition: box-shadow 0.3s ease-in-out; /* Smooth transition */
+}
+
+.app__task__remove:hover {
+    box-shadow:
+            3px 3px 6px #babecc, /* Slightly smaller shadow on hover */
+            -3px -3px 6px #ffffff;
+}
+
+.app__task__remove:active {
+    box-shadow:
+            inset 2px 2px 5px #babecc, /* Inset shadow on click */
+            inset -2px -2px 5px #ffffff;
+}
+
+.app__task__remove img {
+    width: 20px; /* Adjust size as needed */
+    height: 20px;
+    display: block; /* Ensure image is a block element */
+}
+
+.remove-btn-img{
+}

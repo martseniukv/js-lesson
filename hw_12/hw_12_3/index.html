@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Homework 12.3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+<div id="app" class="app__container">
+
+    <h3 class="app__title">To Do List</h3>
+
+    <div class="app__create__container">
+
+        <div id= "app__input__container" class="app__input__container">
+            <input type="text"
+                   id="app__task__input"
+                   class="app__create__input"
+                   placeholder="Enter your task">
+            <button type="submit" id="add__task__btb" class="app__create__btn">Add</button>
+        </div>
+    </div>
+
+    <ul class="app__tasks" id="app__tasks">
+        <li class="app__task">
+            <div class="app__task__container">
+                <input type="checkbox" class="app__task__checkbox">
+                <span class="app__task__text">Learn English</span>
+            </div>
+            <button id="app__task__remove" class="app__task__remove">
+                <img src="delete-button.svg" class="remove-btn-img" alt="delete">
+            </button>
+        </li>
+    </ul>
+</div>
+
+
+<script src="main.js"></script>
+</body>
+</html>

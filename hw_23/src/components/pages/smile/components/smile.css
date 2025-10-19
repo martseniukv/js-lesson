@@ -1,0 +1,72 @@
+.smile-page-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.smile-main-header {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.smile-winner-wrapper {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+.winner-header{
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.smile-winner-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.smile-list {
+
+    width: 100%;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.smile-wrapper {
+    width: 70px;
+    border: 1px solid black;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.smile-text {
+    font-size: 3rem;
+    border-bottom: 1px solid black;
+}
+
+.smile-winner-btn {
+
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 10px 15px;
+    background-color: #007bff;
+}
+
+.smile-winner-btn:hover {
+    background-color: #0056b3;
+}
+
+.no-select {
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE/Edge */
+    user-select: none; /* Standardный синтаксис */
+}

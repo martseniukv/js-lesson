@@ -1,0 +1,96 @@
+:root {
+    --main-orange-color: #ff5945;
+}
+
+body {
+    background-color: rgb(186, 186, 198);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.app__container {
+
+    margin: 0 auto;
+    max-width: 540px;
+    background-color: rgb(255, 255, 255);
+    padding: 10px 20px;
+}
+
+
+.post-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.post-input {
+    border: none;
+    border-bottom: 2px solid #ddd;
+    padding: 8px 0;
+    background-color: transparent;
+    /*border: 1px solid #959397;*/
+    /*padding: 10px 15px;*/
+    border-radius: 30px;
+}
+.post-input[placeholder] {
+    padding-left: 10px;
+}
+
+
+
+.input-wrapper {
+    position: relative; /* Создаем контекст позиционирования для label */
+    border: 1px solid #ccc; /* Основная граница для "контейнера" */
+    border-radius: 5px;
+    padding: 10px; /* Внутренний отступ для input, чтобы label не перекрывал текст */
+}
+
+.input-wrapper input[type="text"] {
+    width: 100%; /* Занимает всю ширину контейнера */
+    padding: 0; /* Убираем внутренний отступ input, так как он задан для wrapper */
+    border: none; /* Убираем стандартную границу input */
+    outline: none; /* Убираем стандартный контур при фокусе */
+    font-size: 16px;
+}
+
+.input-wrapper label {
+    position: absolute; /* Позиционируем label абсолютно внутри wrapper */
+    top: -8px; /* Поднимаем label над верхней границей input */
+    left: 10px; /* Отступ слева */
+    padding: 0 5px;
+    background-color: white; /* Фон label, чтобы перекрыть границу */
+    color: #999; /* Цвет текста label */
+    font-size: 12px;
+}
+
+.input-wrapper input[type="text"]:focus + label,
+.input-wrapper input[type="text"]:not(:placeholder-shown) + label {
+    color: #007bff; /* Цвет label при фокусе или когда input не пустой */
+}
+
+.post-create-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.post-create-btn{
+    padding: 10px 60px;
+    background-color: #4ec3c3;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+}
+.post-list {
+    background-color: rgb(249, 249, 249);
+}
+
+.post-item {
+    background-color: rgb(255, 255, 255);
+}

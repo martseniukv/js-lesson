@@ -1,0 +1,48 @@
+.Counter {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    padding: 20px 0;
+    margin-bottom: 16px;
+    border-radius: 12px;
+    background: #f4f6fb;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    transition: background 0.2s;
+}
+
+.button-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.button-wrapper button {
+    padding: 8px 18px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #fff;
+    background: #007bff;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.15s;
+}
+
+.button-wrapper button:hover {
+    background: #0056b3;
+}
+
+.dropdown {
+    display: flex;
+    justify-content: center;
+}
+
+.dropdown select {
+    padding: 4px 12px;
+    font-size: 1rem;
+    border-radius: 6px;
+    border: 1px solid #cacaca;
+}

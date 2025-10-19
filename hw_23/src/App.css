@@ -1,0 +1,41 @@
+.main-layout {
+    display: grid;
+    grid-template-columns: [sidebar-start] auto [content-end content-start] 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0;
+    grid-row-gap: 0;
+}
+
+.button {
+    padding: 10px 15px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #fff;
+    background: #007bff;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.15s;
+}
+
+.button:hover {
+    background: #0056b3;
+}
+
+.input {
+    padding: 5px 10px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #333;
+    background: #fff;
+    border: 2px solid #007bff;
+    outline: none;
+    border-radius: 6px;
+    transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.input:focus {
+    border-color: #0056b3;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+}
